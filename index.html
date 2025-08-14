@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder Pro - Professional Resume Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-file-alt"></i> Resume Pro
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="home-link">Home</a></li>
+                    <li><a href="#templates">Templates</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="welcome-section" id="welcomeSection">
+            <div class="welcome-content">
+                <h1 class="welcome-title">Create Your Perfect Resume</h1>
+                <p class="tagline">Professional • Modern • Custom</p>
+                <p class="description">
+                    Build stunning resumes with our professional templates. Upload photos, certificates, 
+                    and achievements. Create a resume that stands out from the crowd.
+                </p>
+                <button class="cta-button" onclick="showTemplates()">
+                    <i class="fas fa-rocket"></i> Get Started
+                </button>
+            </div>
+
+                    <!-- Features Grid -->
+        <div class="features-grid" id="features">
+            <div class="feature-card">
+                <i class="fas fa-palette feature-icon"></i>
+                <h3 class="feature-title">Multiple Templates</h3>
+                <p class="feature-description">Choose from professional, modern, and custom designs that suit your style and industry.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-upload feature-icon"></i>
+                <h3 class="feature-title">Easy Uploads</h3>
+                <p class="feature-description">Upload photos, certificates, and portfolio files with drag-and-drop simplicity.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-link feature-icon"></i>
+                <h3 class="feature-title">Hyperlink Integration</h3>
+                <p class="feature-description">Add LinkedIn, GitHub, and portfolio links to showcase your online presence.</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Template Selection Section -->
+        <div class="template-selection" id="templateSection" style="display: none;">
+            <h2 class="section-title">Choose Your Template</h2>
+            <p class="section-subtitle">
+                Select from our carefully crafted templates designed to make your resume stand out
+            </p>
+            
+            <div class="template-grid" id="templates">
+                <div class="template-card" onclick="selectTemplate('professional')">
+                    <i class="fas fa-briefcase template-icon"></i>
+                    <h3 class="template-name">Professional</h3>
+                    <p class="template-description">Clean, traditional design perfect for corporate and business environments.</p>
+                    <ul class="template-features">
+                        <li>Classic layout</li>
+                        <li>Business-friendly</li>
+                        <li>Easy to scan</li>
+                        <li>ATS optimized</li>
+                    </ul>
+                </div>
+                
+                <div class="template-card" onclick="selectTemplate('modern')">
+                    <i class="fas fa-star template-icon"></i>
+                    <h3 class="template-name">Modern</h3>
+                    <p class="template-description">Contemporary design with visual elements for creative and tech industries.</p>
+                    <ul class="template-features">
+                        <li>Visual elements</li>
+                        <li>Creative layout</li>
+                        <li>Color accents</li>
+                        <li>Modern typography</li>
+                    </ul>
+                </div>
+                
+                <div class="template-card" onclick="selectTemplate('custom')">
+                    <i class="fas fa-magic template-icon"></i>
+                    <h3 class="template-name">Custom</h3>
+                    <p class="template-description">Unique design that lets you showcase your personality and creativity.</p>
+                    <ul class="template-features">
+                        <li>Unique layout</li>
+                        <li>Personalized style</li>
+                        <li>Creative freedom</li>
+                        <li>Stand out design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Have questions or need support? We're here to help you create the perfect resume.
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>support@resumebuilderpro.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>24/7 Support Available</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Back to Home Button -->
+    <div class="floating-home-btn">
+        <a href="#home" title="Back to Top" onclick="scrollToTop()">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
