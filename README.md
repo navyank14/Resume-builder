@@ -37,18 +37,6 @@ Custom – Flexible, card-based design for unique portfolios
 
 -> Tech Stack
 
-HTML5, CSS3, JavaScript
+HTML, CSS, JavaScript
 
-
--> Roadmap
-
-PDF export
-
-More templates
-
-Resume sharing
-
-ATS optimization
-
-Cover letter builder
 
